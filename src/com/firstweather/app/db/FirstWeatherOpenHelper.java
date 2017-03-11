@@ -4,21 +4,25 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
-
+/**
+ * openhelper类，创建Province表，city表和county表
+ * @author Administrator
+ *
+ */
 public class FirstWeatherOpenHelper extends SQLiteOpenHelper {
 
 	/**
 	 * Province表建表语句
 	 */
 	public static final String CREATE_PROVINCE="create table Province(" +
-			"id integr primary key autoincreament," +
+			"id integer primary key autoincrement," +
 			"province_name text," +
 			"province_code text)";
 	/**
 	 * City表交表语句
 	 */
 	public static final String CREATE_CITY="create table City(" +
-			"id integr primary key autoincreament," +
+			"id integer primary key autoincrement," +
 			"city_name text," +
 			"city_code text," +
 			"province_id integer)";
@@ -26,7 +30,7 @@ public class FirstWeatherOpenHelper extends SQLiteOpenHelper {
 	 *County表建表语句 
 	 */
 	public static final String CREATE_COUNTY="create table County(" +
-			"id integr primary key autoincreament," +
+			"id integer primary key autoincrement," +
 			"county_name text," +
 			"county_code text," +
 			"city_id integer)";

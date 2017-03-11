@@ -3,7 +3,7 @@ package com.firstweather.app.model;
 public class County {
 
 	private int id;
-	private String conntyName;
+	private String countyName;
 	private String countyCode;
 	private int cityId;
 	public int getId() {
@@ -12,11 +12,11 @@ public class County {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getConntyName() {
-		return conntyName;
+	public String getCountyName() {
+		return countyName;
 	}
-	public void setConntyName(String conntyName) {
-		this.conntyName = conntyName;
+	public void setConntyName(String countyName) {
+		this.countyName = countyName;
 	}
 	public String getCountyCode() {
 		return countyCode;
